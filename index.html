@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  
+</head>
+
+<body style="height: 100%;">
+
+  <div class="container">
+    <div class="row" >
+      <nav class="col-3" style="background-color: gray; text-align: center; position:fixed; top:0; left:0; bottom: 0; width: 300px;"  >
+        <div class="contenttext" style="margin-top:30%; font-size: 20px; font-weight: bold; line-height: 35px;">
+            <i class="fas fa-address-book"></i>
+          <div id="view"><a href="#viewList" style="color:white">View</a></div>
+          <div id="add"><a href="#viewList" style="color:white">Add</a></div>
+          <div id="verify"><a href="#verifyAnswer" style="color:white">Verify</a></div>
+          <div id="update"><a href="#viewList" style="color:white">Update</a></div>
+          <div id="delete"><a href="#viewList" style="color:white">Delete</a></div>
+        </div>
+      </nav>
+      <div class="col-9">
+        <form id=form1 style="visibility:hidden; position: absolute; top: 5px;">
+        <input type="text" id="empName" placeholder="Employee Name">
+        <input type="text" id="officeNum" placeholder="Office Number">
+        <input type="text" id="phoneNum" placeholder="Phone Number">
+        <button id="submit">Submit</button>
+        </form>
+        <form id=form2 style="visibility:hidden; position: absolute; top: 5px;">
+            <input type="text" id="searchEmp" placeholder="Search Employees">
+            <button id="search">Search</button>
+        </form>
+        <form id=form3 style="visibility:hidden; position: absolute; top: 5px;">
+            <input type="text" id="empName2" placeholder="Employee Name">
+            <input type="text" id="officeNum2" placeholder="Office Number">
+            <input type="text" id="phoneNum2" placeholder="Phone Number">
+            <button id="submit2">Submit</button>
+        </form>
+        <form id=form4 style="visibility:hidden; position: absolute; top: 5px;">
+            <input type="text" id="searchEmp2" placeholder="Employee to be Removed">
+            <button id="search2">Submit</button>
+        </form>
+
+        <div class="main">
+        <section id="viewList" style="visibility:hidden; margin-top:50px">
+          <p id="viewListP"></p>
+        </section>
+
+        <section id="verifyAnswer" style="visibility:hidden;">
+          <p id="verifyA"></p>
+        </section>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+
+
+  <script src="dom.js"></script>
+  <script src="employeeList.js"></script>
+  <script src="app.js"></script>
+
+</body>
+
+</html>
